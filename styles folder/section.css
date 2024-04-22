@@ -380,6 +380,7 @@ section.section3 > .section3-article {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     gap: 30px 10rem;
     margin: 100px 0;
   }
