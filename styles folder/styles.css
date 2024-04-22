@@ -110,7 +110,7 @@ article > h1 {
   font-weight: 500;
 }
 
-article > p {
+.header-para {
   font-size: 13px;
   margin-top: 20px;
   font-weight: 300;
