@@ -1,0 +1,23 @@
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: #fff;
+}
+@media (max-width: 900px) {
+  .heading {
+    padding: 10px !important;
+  }
+  .hamburger {
+    display: block;
+  }
+  .inner-left-section,
+  .right-section {
+    display: none !important;
+  }
+}

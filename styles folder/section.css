@@ -267,7 +267,7 @@ section.section3 > .section3-article {
   margin-top: 80px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  grid-gap: 0 70px;
+  grid-gap: 20px 70px;
 }
 
 @media (max-width: 700px) {
