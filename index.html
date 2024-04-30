@@ -10,10 +10,8 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles folder/toggle.css" />
     <link rel="stylesheet" href="./styles folder/styles.css" />
-    <link rel="stylesheet" href="./styles folder/genral.css" />
-    <link rel="stylesheet" href="./styles folder/section.css" />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -23,7 +21,7 @@
     <main>
       <header>
         <div class="header-container">
-          <div class="heading">
+          <div class="heading" id="heading">
             <div class="left-section">
               <p class="brand-name">Brand Name</p>
               <nav>
@@ -40,12 +38,26 @@
 
               <button class="Join-us-button">JOIN US &nbsp; &#8594;</button>
             </div>
-            <div class="hamburger">
-              <span class="bar"></span>
-              <span class="bar"></span>
-              <span class="bar"></span>
-            </div>
           </div>
+          <nav class="off-menu-nav">
+            <a href="#">Brand Name</a>
+            <div class="hamburger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </nav>
+          <nav class="toggle">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Product</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+
+            <a href="#"> Login </a>
+            <button>Join Us</button>
+          </nav>
           <article class="heading-article">
             <a class="Join-us" href="#">Join Us</a>
             <h1>HIGH QUALITY COURSES</h1>
@@ -464,5 +476,13 @@
         </div>
       </div>
     </footer>
+    <script>
+      const hamMenu = document.querySelector(".hamburger");
+      const toggle = document.querySelector(".toggle");
+      hamMenu.addEventListener("click", () => {
+        hamMenu.classList.toggle("active");
+        toggle.classList.toggle("active");
+      });
+    </script>
   </body>
 </html>
